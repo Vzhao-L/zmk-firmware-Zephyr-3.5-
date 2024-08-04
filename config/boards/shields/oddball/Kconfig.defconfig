@@ -1,7 +1,7 @@
 if SHIELD_ODDBALL_CENTRAL_DONGLE || SHIELD_ODDBALL_CENTRAL_LEFT
 
 config ZMK_KEYBOARD_NAME
-    default "Oddball"
+    default "V&Z-Charybdis"
 
 config ZMK_SPLIT_ROLE_CENTRAL
     default y
