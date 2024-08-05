@@ -63,7 +63,7 @@
 
 /{
   /* auto toggle mouse key layer */
-  trackball_peripheral_auto_mouse_listener {
+/*  trackball_peripheral_auto_mouse_listener {
         compatible = "zmk,input-behavior-listener";
         device = <&pd1>;
         layers = <0>;
@@ -73,7 +73,7 @@
 	scale-multiplier = <1>;
 	scale-divisor = <1>;
         bindings = <&ib_tog_layer 5>;
-   };
+   };*/
 
    /* input config for mouse scroll mode on momentary mouse scoll layer */
    trackball_peripheral_scroll_listener {
@@ -98,7 +98,7 @@
            bindings = <&ib_wheel_scaler_x 1 8 &ib_wheel_scaler_y 1 10>;
    };
 
-   trackball_peripheral_snipe_listener {
+ / * trackball_peripheral_snipe_listener {
           compatible = "zmk,input-behavior-listener";
           device = <&pd1>;
           layers = <3>;
@@ -146,7 +146,7 @@
         evt-type = <INPUT_EV_REL>;
         input-code = <INPUT_REL_Y>;
     };
-};
+};*/
 &spi3 {
 	compatible = "nordic,nrf-spim";
 	status = "okay";
