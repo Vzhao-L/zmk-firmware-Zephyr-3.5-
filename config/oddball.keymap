@@ -4,7 +4,7 @@
 #include <dt-bindings/zmk/mouse.h>
 #include <dt-bindings/zmk/outputs.h>
 
-&lt {
+/*&lt {
     tapping-term-ms = <240>;
     flavor = "balanced";
     quick-tap-ms = <150>;
@@ -19,7 +19,7 @@
 &sk {
     release-after-ms = <2000>;
     quick-release;
-};
+};*/
 
 / {
     macros {
@@ -125,27 +125,28 @@
     keymap {
         compatible = "zmk,keymap";
 
-        Qwery {
-            label = "Qwery";
+       layer_0 {
             bindings = <
-&kp ESCAPE       &kp Q           &kp W           &kp E               &kp R             &kp T           &kp Y  &kp U              &kp I                &kp O                    &hm LG(LS(V)) P      &kp DELETE
-&as TILDE GRAVE  &hm LEFT_GUI A  &hm LEFT_ALT S  &hm LEFT_CONTROL D  &hm LEFT_SHIFT F  &lt 6 G         &kp H  &hm RIGHT_SHIFT J  &hm RIGHT_CONTROL K  &hm RIGHT_ALT L          &as COLON SEMICOLON  &as DOUBLE_QUOTES SINGLE_QUOTE
-&kp ENTER        &kp Z           &kp X           &kp C               &kp V             &kp B           &kp N  &kp M              &as LESS_THAN COMMA  &as GREATER_THAN PERIOD  &as QUESTION SLASH   &kp ENTER
-                                                 &ltq 1 BACKSPACE    &ltq 3 TAB        &ltq 2 SPACE                              &ltq 7 SPACE
+&kp ESC         &kp N1  &kp N2  &kp N3        &kp N4     &kp N5      &kp N6     &kp N7     &kp N8     &kp N9            &kp N0    &kp BACKSPACE
+&kp TAB         &kp Q   &kp W   &kp E         &kp R      &kp T       &kp Y      &kp U      &kp I      &kp O             &kp P     &kp BSLH
+&kp LEFT_SHIFT  &kp A   &kp S   &kp D         &kp F      &kp G       &kp H      &kp J      &kp K      &kp L             &kp SEMI  &kp SQT
+&kp LCTRL       &kp Z   &kp X   &kp C         &kp V      &kp B       &kp N      &kp M      &kp COMMA  &kp LEFT_BRACKET  &kp FSLH  &kp MINUS
+                                &kp LEFT_WIN  &kp SPACE  &mo 1       &kp LALT   &kp GRAVE
+                                              &mkp MB1   &mkp MB2    &kp ENTER
+            >;
+        };
+     layer_1 {
+              bindings = <
+&kp F1          &kp F2           &kp F3           &kp F4           &kp F5           &kp F6        &kp F7     &kp F8    &kp F9      &kp F10            &kp F11  &kp F12
+&kp CAPS        &none            &none            &none            &none            &bt BT_NXT    &none      &none     &kp UP      &none              &none    &none
+&kp LEFT_SHIFT  &none            &none            &none            &none            &bt BT_CLR    &none      &kp LEFT  &kp DOWN    &kp RIGHT          &none    &none
+&kp LCTRL       &rgb_ug RGB_BRD  &rgb_ug RGB_BRI  &rgb_ug RGB_EFF  &rgb_ug RGB_TOG  &none         &none      &none     &kp PERIOD  &kp RIGHT_BRACKET  &none    &kp EQUAL
+                                                  &kp LEFT_ALT     &kp SPACE        &none         &none      &none
+                                                                   &mkp MB1         &mkp MB2      &kp ENTER
             >;
         };
 
-        Navi {
-            label = "Navi";
-            bindings = <
-&trans  &trans        &kp MINUS     &kp HOME          &kp PAGE_UP     &kp K_MUTE           &trans                &trans          &kp UP_ARROW    &trans     &trans  &trans
-&trans  &kp LEFT_GUI  &kp LEFT_ALT  &kp LEFT_CONTROL  &kp LEFT_SHIFT  &kp C_VOLUME_UP      &kp C_BRIGHTNESS_INC  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT  &trans  &trans
-&trans  &trans        &trans        &kp END           &kp PAGE_DOWN   &kp C_VOLUME_DOWN    &kp C_BRI_DEC         &trans          &trans          &trans     &trans  &trans
-                                    &trans            &trans          &trans                                                     &trans
-            >;
-        };
-
-        Symbol {
+        /*Symbol {
             label = "Symbol";
             bindings = <
 &trans  &kp EXCL       &kp AT               &kp HASH              &kp DLLR        &kp PRCNT               &kp CARET             &kp AMPS         &kp ASTERISK         &kp LPAR                        &kp RPAR            &trans
@@ -206,15 +207,15 @@
             >;
 
             label = "Number";
-        };
+        }; */
     };
 
-    conditional_layers {
+    /*  conditional_layers {
         compatible = "zmk,conditional-layers";
 
-        Flash {
+    Flash {
             if-layers = <2 3>;
             then-layer = <4>;
         };
-    };
+    };   */
 };
