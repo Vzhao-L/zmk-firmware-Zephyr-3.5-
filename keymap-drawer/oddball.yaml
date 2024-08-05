@@ -23,7 +23,7 @@ layers:
   - I
   - O
   - P
-  - {t: \, s: '|'}
+  - {t: '[', s: '{'}
   - $$mdi:apple-keyboard-shift$$
   - A
   - S
@@ -45,14 +45,14 @@ layers:
   - N
   - M
   - {t: ',', s: <}
-  - {t: '[', s: '{'}
+  - {t: ., s: '>'}
   - {t: /, s: '?'}
-  - {t: '-', s: _}
+  - {t: '=', s: +}
   - LEFT WIN
   - $$mdi:keyboard-space$$
   - '1'
   - $$mdi:apple-keyboard-option$$
-  - {t: '`', s: '~'}
+  - {t: '-', s: _}
   - '&mkp MB1'
   - '&mkp MB2'
   - {t: '$$mdi:keyboard-return$$', type: enter}
@@ -80,7 +80,7 @@ layers:
   - $$mdi:arrow-up-bold$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: ']', s: '}'}
   - $$mdi:apple-keyboard-shift$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -92,24 +92,24 @@ layers:
   - $$mdi:arrow-down-bold$$
   - $$mdi:arrow-right-bold$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: \, s: '|'}
   - $$mdi:apple-keyboard-control$$
-  - RGB BRD
-  - RGB BRI
-  - RGB EFF
-  - RGB TOG
+  - '&mkp MB4'
+  - '&mkp MB5'
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - .
-  - {t: ']', s: '}'}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '=', s: +}
-  - $$mdi:apple-keyboard-option$$
+  - LEFT WIN
   - $$mdi:keyboard-space$$
   - {t: '$$mdi:minus-circle-outline$$', type: held}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - $$mdi:apple-keyboard-option$$
+  - {t: '`', s: '~'}
   - '&mkp MB1'
   - '&mkp MB2'
   - {t: '$$mdi:keyboard-return$$', type: enter}
