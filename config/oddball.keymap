@@ -22,7 +22,7 @@
 };*/
 
 / {
-    macros {
+   /* macros {
         dongle_bootload_macro: bootload_macro {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -120,7 +120,7 @@
             tapping-term-ms = <135>;
             quick-tap-ms = <0>;
         };
-    };
+    };*/
 
     keymap {
         compatible = "zmk,keymap";
