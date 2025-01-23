@@ -50,9 +50,9 @@ layers:
   - {t: '-', s: _}
   - LEFT WIN
   - $$mdi:keyboard-space$$
-  - '1'
+  - '&R1_macro'
   - $$mdi:apple-keyboard-option$$
-  - {t: '`', s: '~'}
+  - '&R1_macro'
   - '&mkp MB1'
   - '&mkp MB2'
   - {t: '$$mdi:keyboard-return$$', type: enter}
@@ -107,7 +107,7 @@ layers:
   - {t: '=', s: +}
   - $$mdi:apple-keyboard-option$$
   - $$mdi:keyboard-space$$
-  - {t: '$$mdi:minus-circle-outline$$', type: held}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - '&mkp MB1'
